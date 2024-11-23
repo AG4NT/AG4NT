@@ -1,0 +1,64 @@
+@import url(signe/in.html);
+@keyframes gradientAnimation {
+    0% {
+        background-color: rgb(170, 175, 179);
+        background-image: linear-gradient(90deg, rgba(255, 0, 150, 1), rgba(0, 204, 255, 1));
+    }
+    50% {
+        background-color: rgb(170, 175, 179);
+        background-image: linear-gradient(90deg, rgba(0, 204, 255, 1), rgba(255, 0, 150, 1));
+    }
+    100% {
+        background-color: rgb(170, 175, 179);
+        background-image: linear-gradient(90deg, rgba(255, 0, 150, 1), rgba(0, 204, 255, 1));
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    animation: gradientAnimation 5s ease infinite; /* Apply the animation */
+    background-size: 400% 400%; /* Optional: makes the gradient larger for better animation effect */
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color:rgb(170, 175, 179);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url(img2.jpg);
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-size: cover; /* Optional: makes the image cover the entire background */
+}
+
+h2 {
+    text-align: center;
+}
+
+input[type="email"], input[type="password"], input[type="full name"], input[type="phone number"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    animation: 1.3 ease;
+}
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    color: rgb(241, 235, 235);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #444;
+    animation: 1.3 ease
+} 
